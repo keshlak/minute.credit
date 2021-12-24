@@ -447,4 +447,38 @@ table {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.logo__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  color: #66b41f;
+}
+
+.image-container {
+  width: 130px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.cardlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
 /*# sourceMappingURL=main.css.map */

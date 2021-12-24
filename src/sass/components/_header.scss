@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  color: $main-green-color;
+}
