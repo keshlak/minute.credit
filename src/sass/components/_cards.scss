@@ -1,14 +1,107 @@
+.cards {
+  margin-top: 80px;
+}
+
 .image-container {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 130px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
   //   height: 50px;
 
   & img {
+    display: block;
+    margin-left: auto;
     width: 100%;
+    object-fit: contain;
   }
 }
 
 .cardlist {
+  // margin: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+
+  text-align: center;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-top: 15px;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    &:nth-child(n + 3) {
+      margin-top: 15px;
+    }
+  }
+  @media (min-width: $tablet) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    &:nth-child(n + 5) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.card__info {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 190px;
+  max-width: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  line-height: 2;
+}
+
+.card__text {
+  flex-basis: calc((100% - 2 * 5px) / 2);
+
+  &-left {
+    text-align: start;
+  }
+
+  &-right {
+    text-align: end;
+  }
+}
+
+.card a {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: $main-white-color;
+  width: 220px;
+  // height: 60px;
+  background: #66b41f;
+  border-radius: 10px;
+
+  text-decoration: none;
 }
